@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: none;
+}
+
+body {
+    background-color: white;
+    display: grid;
+    place-content: center;
+    font-family: "Roboto, san-serif";
+    height: 100vh;
+    font-size: 2rem;
+}
+
+.container {
+    height: 80vh;
+    width: 60vh;
+    background-color: #5b5253;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.wrapper {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2px;
+}
+
+.screen {
+    grid-column: 1 / -1;
+    color: white;
+    text-align: right;
+    padding: 0.5rem;
+    font-size: 4rem;
+    overflow: hidden;
+}
+
+.btn {
+    display: grid;
+    place-content: center;
+    background-color: #837d7d;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #837d7d;
+}
+
+.dark-gray {
+    background-color: #6c6364;
+    color: white;
+}
+
+.dark-gray:hover {
+    background-color: white;
+    color: #6c6364;
+}
+
+.orange {
+    background-color: #fd9e2a;
+}
+
+.orange:hover {
+    background-color: white;
+    color: #fd9e2a;
+}
+
+.zero {
+    grid-column: 1 / span 2;
+    place-content: unset;
+    align-items: center;
+    padding-left: 5rem;
+}
